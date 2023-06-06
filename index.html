@@ -9,7 +9,7 @@
   <style>
     body,
     h1,
-    h2, 
+    h2,
     h3,
     h4,
     h5,
@@ -102,6 +102,19 @@
       border-radius: 3px;
       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
       backdrop-filter: blur(8px);
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        min-width: 90%;
+        max-width: 90%;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .container {
+        max-width: 90%;
+      }
     }
 
     h1 {
@@ -252,7 +265,7 @@
       var scrolledHeight = window.pageYOffset;
       parallaxBg.style.backgroundPositionY = (-35 - (scrolledHeight * 0.10)) + "px";
       var container = document.querySelector(".container");
-      container.style.marginTop = (-30 - (scrolledHeight * 0.30)) + "px";
+      container.style.marginTop = (-50 - (scrolledHeight * 0.30)) + "px";
 
       var container = document.querySelector(".title");
       container.style.marginTop = (20 - (scrolledHeight * 0.04)) + "px";
