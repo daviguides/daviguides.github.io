@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <title>Expert Python Backend Developer</title>
@@ -27,21 +28,21 @@
 
     .parallax-content {
       position: absolute;
-      top: 60%;
+      top: 70%;
       left: 50%;
-      transform: translate(-50%, -20%);
+      transform: translate(-50%, -25%);
       text-align: center;
       color: #fff;
     }
 
     .parallax-content h1 {
-        color: #fff;
+      color: #fff;
     }
 
     .container {
       max-width: 800px;
-      margin: -20px auto;
-      padding: 20px;
+      margin: -30px auto;
+      padding: 1px 20px 20px 20px;
       position: relative;
       z-index: 1;
       background-color: rgba(254, 256, 256, 0.9);
@@ -53,10 +54,21 @@
       margin-bottom: 20px;
     }
 
-    h2 {
+    .container h1 {
       font-size: 24px;
+      font-weight: 900;
       color: #333;
+      margin-top: 20px;
       margin-bottom: 0px;
+      font-size: 28px;
+    }
+
+    h2 {
+      font-weight: 300;
+    }
+
+    strong {
+      font-size: 18px;
     }
 
     p {
@@ -67,11 +79,11 @@
     }
 
     .about {
-        display: flex;
+      display: flex;
     }
 
     .text {
-        width: 75%;
+      width: 75%;
     }
 
     .avatar-container {
@@ -118,61 +130,72 @@
     }
   </style>
 </head>
+
 <body>
   <div class="parallax-bg">
     <div class="parallax-content">
-        <h1>Expert Python Backend Developer</h1>
-      <!-- <h1>Davi Guides</h1>
-      <h2>Expert Python Backend Developer</h2> -->
+      <h1>Expert Python Backend Developer</h1>
     </div>
   </div>
 
   <div class="container">
-    <h2>Davi Guides</h2>
+    <h1>Davi Guides</h1>
     <div class="about">
-        <div class="text">
-            <p>Hello, I'm a Python Backend Specialist Developer and I have had the opportunity to work on various challenging projects, contributing to the success and growth of the companies I have been involved with.</p>
-            <p>
-            I'm well-equipped to handle projects at different stages, from initial development to scalability and large-scale operations. I have experience in designing and implementing efficient algorithms, taking into consideration time and space complexity. I also have skills in system architecture and design, ensuring optimal performance. I'm open to opportunities where I can apply my expertise to achieve successful outcomes.</p>
-        </div>
-        <div class="avatar-container">
-            <img class="profile-picture" src="avatar.jpg" alt="Profile Picture">
-        </div>
+      <div class="text">
+        <p><strong>Hello</strong>, I'm a Python Backend Specialist Developer and I have had the opportunity to work on various
+          challenging projects, contributing to the success and growth of the companies I have been involved with.</p>
+        <p>
+          I'm well-equipped to handle projects at different stages, from initial development to scalability and
+          large-scale operations. I have experience in designing and implementing efficient algorithms, taking into
+          consideration time and space complexity. I also have skills in system architecture and design, ensuring
+          optimal performance. I'm open to opportunities where I can apply my expertise to achieve successful outcomes.
+        </p>
+      </div>
+      <div class="avatar-container">
+        <img class="profile-picture" src="avatar.jpg" alt="Profile Picture">
+      </div>
     </div>
     <div class="highlights">
       <h2>Highlights</h2>
       <ul>
-        <li>With over 19 years of experience in the technology industry, including 15 years as a specialized Python backend developer, I possess extensive knowledge and expertise in this field.</li>
-        <li>Solid experience with web frameworks, libraries, and technologies: Flask, Celery, RabbitMQ, MySQL, MongoDB, Redis;</li>
+        <li>With over 19 years of experience in the technology industry, including 15 years as a specialized Python
+          backend developer, I possess extensive knowledge and expertise in this field.</li>
+        <li>Solid experience with web frameworks, libraries, and technologies: Flask, Celery, RabbitMQ, MySQL, MongoDB,
+          Redis;</li>
         <li>As well as an understanding of: FastApi, Pub/Sub, Elasticsearch, Postgres;</li>
         <li>Experienced in finding appropriate solutions to problems through software architecture;</li>
         <li>Good knowledge of agile software development methodologies: Scrum and Kanban;</li>
         <li>Experience working in small and large remote distributed teams;</li>
-        <li>Experience with cloud technologies, mainly with AWS services such as EC2, S3, Route53, CloudWatch, and SQS;</li>
-        <li>Strong knowledge of OOP, design patterns, designing application systems from scratch, and database modeling.</li>
+        <li>Experience with cloud technologies, mainly with AWS services such as EC2, S3, Route53, CloudWatch, and SQS;
+        </li>
+        <li>Strong knowledge of OOP, design patterns, designing application systems from scratch, and database modeling.
+        </li>
       </ul>
     </div>
-    <p>I'm always seeking new challenges that allow me to utilize my experience and skills to create innovative and efficient solutions. I have a passion for programming and continuously update my knowledge to stay aligned with current best practices and technologies.</p>
-            <p>I'm studying Data Science for Business to build bridges between the business and technical areas. The course covers technology, statistics, and business knowledge.
-            </p>
-    
+    <p>I'm always seeking new challenges that allow me to utilize my experience and skills to create innovative and
+      efficient solutions. I have a passion for programming and continuously update my knowledge to stay aligned with
+      current best practices and technologies.</p>
+    <p>I'm studying Data Science for Business to build bridges between the business and technical areas. The course
+      covers technology, statistics, and business knowledge.
+    </p>
 
-    <!-- <div class="contact">
-      <h2>Contact</h2>
-      <p>If you are looking for an experienced Python backend developer for your next project, please feel free to contact me:</p>
-      <p>Email: developer@example.com</p>
-      <p>Phone: (123) 456-7890</p>
-    </div> -->
+
+    <div class="contact">
+      <h2>Furthermore</h2>
+      <p>If you have any questions or want to talk to me, feel free to send me an inbox message.</p>
+      <p>Here's my linkedin profile <a href="https://www.linkedin.com/in/daviguides/">@daviguides</a></p>
+    </div>
   </div>
 
   <script>
-    window.addEventListener("scroll", function() {
+    window.addEventListener("scroll", function () {
       var parallaxBg = document.querySelector(".parallax-bg");
       var scrolledHeight = window.pageYOffset;
-      parallaxBg.style.backgroundPositionY = (-50-(scrolledHeight * 0.10)) + "px";
+      parallaxBg.style.backgroundPositionY = (-60 - (scrolledHeight * 0.10)) + "px";
       var container = document.querySelector(".container");
-      container.style.marginTop = (-20-(scrolledHeight * 0.30)) + "px";
+      container.style.marginTop = (-30 - (scrolledHeight * 0.30)) + "px";
     });
   </script>
 </body>
+
 </html>
