@@ -38,6 +38,7 @@
     .parallax-content h1 {
       color: #fff;
       font-weight: 400;
+      text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
     .container {
@@ -46,8 +47,10 @@
       padding: 1px 25px 20px 25px;
       position: relative;
       z-index: 1;
-      background-color: rgba(254, 256, 256, 0.9);
-      border-radius: 2px;
+      background-color: rgba(254, 256, 256, 0.8);
+      border-radius: 3px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(8px);
     }
 
     h1 {
@@ -137,7 +140,7 @@
 <body>
   <div class="parallax-bg">
     <div class="parallax-content">
-      <h1>Expert Python Backend Developer</h1>
+      <h1 class="title">Expert Python Backend Developer</h1>
     </div>
   </div>
 
@@ -197,6 +200,9 @@
       parallaxBg.style.backgroundPositionY = (-60 - (scrolledHeight * 0.10)) + "px";
       var container = document.querySelector(".container");
       container.style.marginTop = (-30 - (scrolledHeight * 0.30)) + "px";
+
+      var container = document.querySelector(".title");
+      container.style.marginTop = (20 - (scrolledHeight * 0.04)) + "px";
     });
   </script>
 </body>
