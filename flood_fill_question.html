@@ -11,7 +11,8 @@
 <style type="text/css">
   .container {
       max-width: 100%;
-      margin: 30px auto;
+      max-width: 800px;
+      margin: -600px auto;
       margin-bottom: 20px;
       padding: 1px 15px 20px 15px;
       position: relative;
@@ -21,6 +22,34 @@
       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
       backdrop-filter: blur(8px);
     }
+
+    .parallax-bg {
+      position: relative;
+      width: 100%;
+      height: 700px;
+      overflow: hidden;
+      background-image: url(fill_flood.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top center;
+      /* background-position: 0px -50px; */
+    }
+
+    .parallax-content {
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -25%);
+      text-align: center;
+      color: #fff;
+    }
+
+    .parallax-content h1 {
+      color: #fff;
+      font-weight: 400;
+      text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
 span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -933,10 +962,11 @@ html{
           box-sizing:inherit; }
 
 body {
+  margin: 0;
   background-color: #f1f1f1;
   /* background-image: url(paper.jpeg); */
-  margin: 0 auto;
-  max-width: 800px;
+  /* margin: 0 auto;
+  max-width: 800px; */
   font-size:14px;
   font-weight:400;
   letter-spacing:0;
@@ -15121,8 +15151,12 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
     init_mathjax();
     </script>
     <!-- End of mathjax configuration --></head>
-<body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-
+<body>
+<div class="parallax-bg">
+  <div class="parallax-content">
+    <h1 class="title"></h1>
+  </div>
+</div>
 <div class="container">
 
 <div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
@@ -16332,6 +16366,31 @@ class="
 </div>
 </div>
 </div>
+<script>
+  if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+    document.body.classList.add('mobile');
+  }
+  window.addEventListener("scroll", function () {
+    var parallaxBg = document.querySelector(".parallax-bg");
+    var scrolledHeight = window.pageYOffset;
+    parallaxBg.style.backgroundPositionY = (- (scrolledHeight * 0.10)) + "px";
+    parallaxBg.style.marginTop = (+ (scrolledHeight * 1)) + "px";
+    var container = document.querySelector(".container");
+    container.style.marginTop = (-600 - (scrolledHeight * 0.30)) + "px";
+
+    var container = document.querySelector(".title");
+    container.style.marginTop = (-0 - (scrolledHeight * 0.14)) + "px";
+  });
+  //   var body = document.getElementsByTagName('body')[0];
+
+  //   var parallaxBg2 = document.querySelector(".background");
+  //   var scrolledHeight = window.pageYOffset;
+    
+  //   parallaxBg2.style.backgroundPositionY = (
+  //     - ((scrolledHeight-(body.scrollHeight+200)) * 0.30)
+  //     ) + "px";
+  // });
+</script>
 </body>
 
 
