@@ -59,10 +59,10 @@
     body {
       font-family: 'Montserrat', sans-serif;
       font-weight: 300;
+      font-size: 0.9em;
       margin: 0;
       padding: 0;
       background-color: #f5f5f5;
-      font-size: 16px;
     }
 
     .parallax-bg {
@@ -94,7 +94,7 @@
 
     .container {
       max-width: 70%;
-      margin: -50px auto;
+      margin: -100px auto;
       padding: 1px 25px 20px 25px;
       position: relative;
       z-index: 1;
@@ -263,12 +263,12 @@
     window.addEventListener("scroll", function () {
       var parallaxBg = document.querySelector(".parallax-bg");
       var scrolledHeight = window.pageYOffset;
-      parallaxBg.style.backgroundPositionY = (-35 - (scrolledHeight * 0.10)) + "px";
+      parallaxBg.style.backgroundPositionY = (-60 - (scrolledHeight * 0.10)) + "px";
       var container = document.querySelector(".container");
-      container.style.marginTop = (-50 - (scrolledHeight * 0.30)) + "px";
+      container.style.marginTop = (-100 - (scrolledHeight * 0.30)) + "px";
 
       var container = document.querySelector(".title");
-      container.style.marginTop = (20 - (scrolledHeight * 0.04)) + "px";
+      container.style.marginTop = (-0 - (scrolledHeight * 0.14)) + "px";
     });
   </script>
 </body>
