@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Davi Guides - Expert Python Backend Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap">
   <style>
@@ -104,17 +105,8 @@
       backdrop-filter: blur(8px);
     }
 
-    @media (max-width: 768px) {
-      .container {
-        min-width: 90%;
+    .mobile .container {
         max-width: 90%;
-      }
-    }
-
-    @media (max-width: 500px) {
-      .container {
-        max-width: 90%;
-      }
     }
 
     h1 {
@@ -260,6 +252,9 @@
   </div>
 
   <script>
+    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+      document.body.classList.add('mobile');
+    }
     window.addEventListener("scroll", function () {
       var parallaxBg = document.querySelector(".parallax-bg");
       var scrolledHeight = window.pageYOffset;
