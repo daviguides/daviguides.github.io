@@ -96,6 +96,7 @@
     .container {
       max-width: 70%;
       margin: -100px auto;
+      margin-bottom: 20px;
       padding: 1px 25px 20px 25px;
       position: relative;
       z-index: 1;
@@ -103,6 +104,45 @@
       border-radius: 3px;
       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
       backdrop-filter: blur(8px);
+    }
+
+    body:after {
+      content: "";
+      background-image: url(folhas.jpeg);
+      /* background-size: contain; */
+      /* background-repeat: no-repeat; */
+          /* background-position:bottom bottom; */
+      /* background-position: center center; */
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -100;
+    }
+
+    .background {
+      background-image: url("folhas.jpeg");
+      background-size: cover;
+      background-position: bottom bottom;
+      background-repeat: no-repeat;
+      position: relative;
+      bottom: 0;
+      left: 0;
+      margin-top: -200px;
+      width: 100%;
+      height: 350px;
+      z-index: -1;
+    }
+
+    .background-overlay {
+      background-color: rgba(256, 256, 256, 0.3);
+      backdrop-filter: blur(1px);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
 
     .mobile .container {
@@ -320,6 +360,9 @@
     </div>  
     <!-- </div> -->
   </div>
+  <div class="background">
+    <div class="background-overlay"></div>
+  </div>
 
   <script>
     if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -334,6 +377,10 @@
 
       var container = document.querySelector(".title");
       container.style.marginTop = (-0 - (scrolledHeight * 0.14)) + "px";
+
+      var parallaxBg2 = document.querySelector(".background");
+      var scrolledHeight = window.pageYOffset;
+      parallaxBg2.style.backgroundPositionY = (- (scrolledHeight * 0.20)) + "px";
     });
   </script>
 </body>
