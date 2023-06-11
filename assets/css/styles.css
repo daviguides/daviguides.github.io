@@ -302,6 +302,10 @@ body,
   margin: -30px 0 10px 0;
 }
 
+.mobile .breadcrumb {
+  margin: 5px 0 10px 0!important;
+}
+
 .breadcrumb li {
   margin-right: 10px;
   margin-left: 5px;
