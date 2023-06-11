@@ -284,6 +284,20 @@ body,
       margin: 0 auto;
     }
 
+    .photo_article {
+      width: 100%;
+      text-align: center;
+      margin: 10px auto;
+    }
+
+    .photo_article img {
+      width: 50%;
+    }
+
+    .mobile .photo_article img {
+      width: 90%;
+    }
+
     .mobile .secound_photo {
       display: block;
       width: 100%;
