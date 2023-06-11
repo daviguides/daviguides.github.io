@@ -31,24 +31,21 @@
 </head>
 
 <body>
-  <div class="parallax-bg">
-    <div class="parallax-content">
-      <h1 class="title">Expert Python Backend Developer</h1>
-    </div>
-  </div>
+  <!-- <div class="parallax-bg"> -->
+    <video id="video-background" autoplay loop muted>
+      <source src="customer_service.mp4" type="video/mp4">
+      <!-- Caso o formato MP4 não seja suportado, você pode adicionar outras versões do vídeo -->
+  </video>
+    <!-- <div class="parallax-content">
+      <h1 class="title">Transformative AI-Powered Customer Service System with Efficient Scalability</h1>
+    </div> -->
+  <!-- </div> -->
 
   <div class="container">
-    <h1>Davi Guides</h1>
+    <h1>Portifolio</h1>
     <div class="about">
       <div class="text">
-        <p><strong>Hello</strong>, I'm a Python Backend Specialist Developer and I have had the opportunity to work on
-          various
-          challenging projects, contributing to the success and growth of the companies I have been involved with.</p>
-        <p>
-          I'm well-equipped to handle projects at different stages, from initial development to scalability and
-          large-scale operations. I have experience in designing and implementing efficient algorithms, taking into
-          consideration time and space complexity. I also have skills in system architecture and design, ensuring
-          optimal performance. I'm open to opportunities where I can apply my expertise to achieve successful outcomes.
+        <p><strong>Welcome</strong> to my portfolio, where passion and innovation come together to create impactful projects. From AI-powered customer service systems to scalable architectures, each endeavor represents my commitment to excellence. Join me on this exciting journey as we explore the possibilities and pave the way for a future where technology and human ingenuity thrive.
         </p>
       </div>
       <div class="avatar-container">
@@ -56,21 +53,34 @@
       </div>
     </div>
     <div class="highlights">
-      <h2>Highlights</h2>
-      <ul>
-        <li>With over 19 years of experience in the technology industry, including 15 years as a specialized Python
-          backend developer, I possess extensive knowledge and expertise in this field.</li>
-        <li>Solid experience with web frameworks, libraries, and technologies: Flask, Celery, RabbitMQ, MySQL, MongoDB,
-          Redis;</li>
-        <li>As well as an understanding of: FastApi, Pub/Sub, Elasticsearch, Postgres;</li>
-        <li>Experienced in finding appropriate solutions to problems through software architecture;</li>
-        <li>Good knowledge of agile software development methodologies: Scrum and Kanban;</li>
-        <li>Experience working in small and large remote distributed teams;</li>
-        <li>Experience with cloud technologies, mainly with AWS services such as EC2, S3, Route53, CloudWatch, and SQS;
-        </li>
-        <li>Strong knowledge of OOP, design patterns, designing application systems from scratch, and database modeling.
-        </li>
-      </ul>
+      <h1>Transformative AI-Powered Customer Service System with Efficient Scalability</h1>
+<p><em>Summary: I led the design and deployment of a transformative, AI-powered customer service system, optimizing scalability through a microservices architecture.</em></p>
+
+<h3>Project Overview:</h3>
+<p>Developed an Autonomous Agent-driven Customer Service System, leveraging the Python Scikit-Learn library for intent classification. This system seamlessly integrated with chat channels and APIs for SMS and WhatsApp to ensure comprehensive customer interaction.</p>
+
+<h3>Architecture and System Design:</h3>
+<p>Led the design and implementation of an intelligent architecture, incorporating domain-specific language for logical flows. The system was distributed into 15 specialized microservices, optimizing scalability and efficiently consuming EC2 resources.</p>
+
+<h3>Role and Responsibilities:</h3>
+<p>As the technical reference within the team, I spearheaded software architecture design and oversaw both front-end and back-end development. In my capacity as Team Lead, I provided mentoring, managed API integrations, and oversaw repository management, code reviews, releases, and production deployment. Employed Kanban methodologies for efficient user story and task management.</p>
+
+<h3>Innovation and Technological Integration:</h3>
+<p>Introduced innovative solutions by integrating cutting-edge technologies like Python, Scikit-Learn, and AWS. Additionally, developed a domain-specific language empowering customer service managers to create their own automated service cases.</p>
+
+<h3>Challenges, Problem Solving, and Results:</h3>
+<p>The project presented a significant challenge with managing the system's resource consumption, specifically the RAM used by the intent classifier algorithm. I addressed this by refining data structures and processing techniques, successfully reducing RAM consumption from over 1GB to marginal MB values per instance. This initiative resulted in significant financial and infrastructure savings.</p>
+
+<p>The optimized system automated over one-third of customer calls, significantly improving response efficiency. Additionally, we introduced a hybrid service that combined manual and automated responses, enhancing the work-life quality for attendants.</p>
+
+<h3>Process, Methodology, and Team Collaboration:</h3>
+<p>Implemented Agile methodologies with Kanban for project management, regular stand-ups, and iteration procedures such as defining user stories and tasks, managing repositories and branches, and conducting code reviews. Our team was distributed, with members working both remotely and on-site. I played a pivotal role in ensuring the team’s alignment in understanding and implementing the domain-specific language for automation.</p>
+
+<h3>Deployment and Operations:</h3>
+<p>Built the application using Python and deployed it on AWS EC2 instances, leveraging a suite of AWS services. Embraced CI/CD practices to automate the build and deployment process.</p>
+
+<h3>Learning and Future Considerations:</h3>
+<p>The project underscored the critical importance of efficient resource management. Even small optimizations led to significant cost and resource savings when scaled across a distributed system. For future projects, I would consider exploring containerization solutions and orchestration tools for enhanced scalability and resource management.</p>
     </div>
     <p>I'm always seeking new challenges that allow me to utilize my experience and skills to create innovative and
       efficient solutions. I have a passion for programming and continuously update my knowledge to stay aligned with
@@ -88,7 +98,7 @@
       
       <p>You can also visit my GitHub profile at GitHub Profile: <a href="https://github.com/daviguides">@daviguides</a></p>
 
-      I look forward to hearing from you and discussing exciting opportunities or answering any queries you may have.
+      <p>I look forward to hearing from you and discussing exciting opportunities or answering any queries you may have.</p>
     </div>
     
     <h2>More About Me</h2>
@@ -142,23 +152,23 @@
       document.body.classList.add('mobile');
     }
     window.addEventListener("scroll", function () {
-      var parallaxBg = document.querySelector(".parallax-bg");
-      var scrolledHeight = window.pageYOffset;
-      parallaxBg.style.backgroundPositionY = (-60 - (scrolledHeight * 0.10)) + "px";
+      // var parallaxBg = document.querySelector(".parallax-bg");
+      // var scrolledHeight = window.pageYOffset;
+      // parallaxBg.style.backgroundPositionY = (-60 - (scrolledHeight * 0.10)) + "px";
       var container = document.querySelector(".container");
       container.style.marginTop = (-100 - (scrolledHeight * 0.30)) + "px";
 
-      var container = document.querySelector(".title");
-      container.style.marginTop = (-0 - (scrolledHeight * 0.14)) + "px";
+      // var container = document.querySelector(".title");
+      // container.style.marginTop = (-0 - (scrolledHeight * 0.14)) + "px";
 
-      var body = document.getElementsByTagName('body')[0];
+      // var body = document.getElementsByTagName('body')[0];
 
-      var parallaxBg2 = document.querySelector(".background");
-      var scrolledHeight = window.pageYOffset;
+      // var parallaxBg2 = document.querySelector(".background");
+      // var scrolledHeight = window.pageYOffset;
       
-      parallaxBg2.style.backgroundPositionY = (
-        - ((scrolledHeight-(body.scrollHeight+200)) * 0.30)
-        ) + "px";
+      // parallaxBg2.style.backgroundPositionY = (
+      //   - ((scrolledHeight-(body.scrollHeight+200)) * 0.30)
+      //   ) + "px";
     });
   </script>
 </body>
