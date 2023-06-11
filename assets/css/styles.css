@@ -68,6 +68,10 @@ body,
         object-fit: cover;
     }
 
+    video {
+      filter: blur(3px);
+    }
+
     .parallax-bg {
       position: relative;
       width: 100%;

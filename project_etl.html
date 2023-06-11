@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link as="image" imagesrcset="./assets/images/avatar.jpg" imagesizes="100vw">
+  <link rel="apple-touch-icon" sizes="152x152" href="./assets/images/icons/apple-touch-icon.png">
+  <link rel="mask-icon" href="./assets/images/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="icon" type="image/png" href="./assets/images/icons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="./assets/images/icons/favicon-16x16.png" sizes="16x16">
+  <link rel="shortcut icon" href="./assets/images/icons/favicon.ico">
+
+  <!-- HTML Meta Tags -->
+  <title>Davi Guides - Crafting Effective ETL Solutions for Fintech Data Importation</title>
+  <meta name="description"
+    content="This project saw me develop and implement an efficient ETL pipeline using Python, MongoDB, and MySQL. The experience contributed to the better handling of customer data in the debt negotiation process and fostered my growth as a backend developer.">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://daviguides.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title"
+    content="Davi Guides - Crafting Effective ETL Solutions for Fintech Data Importation">
+  <meta property="og:description"
+    content="This project saw me develop and implement an efficient ETL pipeline using Python, MongoDB, and MySQL.">
+  <meta property="og:image" content="https://daviguides.github.io/assets/images/etl.jpg">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="daviguides.github.io">
+  <meta property="twitter:url" content="https://daviguides.github.io/">
+  <meta name="twitter:title"
+    content="Davi Guides - Crafting Effective ETL Solutions for Fintech Data Importation">
+  <meta name="twitter:description"
+    content="This project saw me develop and implement an efficient ETL pipeline using Python, MongoDB, and MySQL.">
+  <meta name="twitter:image" content="https://daviguides.github.io/assets/images/etl.jpg">
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap">
+  <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- <div class="parallax-bg"> -->
+  <video id="video-background" autoplay loop muted playbackRate="1.5">
+    <source src="./assets/videos/etl.mp4" type="video/mp4">
+    <!-- Caso o formato MP4 não seja suportado, você pode adicionar outras versões do vídeo -->
+  </video>
+  <script>
+    var video = document.getElementById("video-background");
+    video.playbackRate = 0.4; // Ajuste a velocidade de reprodução conforme necessário
+  </script>
+  <!-- <div class="parallax-content">
+      <h1 class="title">Transformative AI-Powered Customer Service System with Efficient Scalability</h1>
+    </div> -->
+  <!-- </div> -->
+
+  <div class="container positive-margin">
+    <h1>Portifolio</h1>
+    <!-- <ul class="breadcrumb">
+      <li><a href="index.html">Goto Perfil;</a></li>
+    </ul> -->
+    <div class="about">
+      <div class="text">
+        <p><strong>Welcome</strong> to my portfolio, where passion and innovation come together to create impactful
+          projects. From AI-powered customer service systems to scalable architectures, each endeavor represents my
+          commitment to excellence. Join me on this exciting journey as we explore the possibilities and pave the way
+          for a future where technology and human ingenuity thrive.
+        </p>
+      </div>
+      <div class="avatar-container">
+        <a href="index.html"><img class="profile-picture" src="./assets/images/avatar.jpg" alt="Profile Picture"></a>
+      </div>
+    </div>
+    <ul class="breadcrumb"><a href="./index.html">Home |</a>
+      <li>Article
+      <li></li>
+    </ul>
+    <div class="highlights">
+      <h1>Crafting Effective ETL Solutions for Fintech Data Importation</h1>
+      <h2>Data Pipeline</h2>
+      <p class="sumary"><em>Summary: This project saw me develop and implement an efficient ETL pipeline using Python, MongoDB, and MySQL.
+        The experience contributed to the better handling of customer data in the debt negotiation process and fostered
+        my growth as a backend developer.</em></p>
+      <div class="photo_article">
+        <img src="./assets/images/etl.jpg"/>
+      </div>
+      <h3>1. Data Extraction:</h3>
+      <p>Utilizing Python's Pandas library, I managed the extraction phase. I developed a robust microservice to read
+        and import data from the CSV file, handling potential inconsistencies and missing values to ensure data quality.
+      </p>
+      <h3>2. Initial Data Loading:</h3>
+      <p>After extraction, the data was initially loaded into MongoDB through the same microservice. This NoSQL database
+        acted as a staging area, simplifying the handling of data during the transformation phase due to its flexible,
+        document-oriented structure.</p>
+      <h3>Data Transformation:</h3>
+      <p>After loading into MongoDB, another microservice was deployed to carry out data cleaning and transformation.
+        This involved normalizing and standardizing data attributes, dealing with missing data, and converting data
+        types. All these processes were implemented using Python and Pandas, highlighting my skills in data cleaning,
+        data preprocessing, and data wrangling.</p>
+      <h3>Inter-Service Communication:</h3>
+      <p>After the transformation phase, the data was then sent to a MessageQueue system. This design ensured loose
+        coupling and reliable communication between different microservices, exhibiting my proficiency in asynchronous
+        programming and inter-service communication.</p>
+      <h3>Final Data Loading:</h3>
+      <p>A separate microservice was triggered by the MessageQueue system to receive the transformed data and load it
+        into the MySQL database, the final destination. The data was spread across several tables according to the
+        company's core business logic, demonstrating my understanding of business logic implementation and MySQL
+        database management.</p>
+      <p>Throughout the project, I maintained the best practices in backend development, microservice architecture,
+        MessageQueue systems, and database management. This project underscores my qualifications as a Backend Developer
+        and my capability to handle complex, data-centric projects within a microservices ecosystem.</p>
+      <h2>Stack</h2>
+      <ul>
+        <li>Python</li>
+        <li>Pandas</li>
+        <li>MongoDB</li>
+        <li>MySQL</li>
+        <li>MessageQueue system (specific system not mentioned)</li>
+      </ul>
+      <h2>Skills required for the project:</h2>
+      <ul>
+        <li>Advanced knowledge of Python to develop the ETL pipeline functionalities.</li>
+        <li>Experience in data manipulation using the Pandas library.</li>
+        <li>Familiarity with MongoDB for the initial data loading and leveraging its flexible document-oriented
+          structure.</li>
+        <li>Proficiency in MySQL to create and manage the tables where the final data will be stored.</li>
+        <li>Skills in data cleaning and transformation, including data normalization, attribute standardization, and
+          handling missing values.</li>
+        <li>Experience in developing microservices to implement the data extraction, transformation, and loading
+          services.</li>
+        <li>Competence in asynchronous communication and interaction between microservices using MessageQueue systems.
+        </li>
+        <li>Familiarity with best practices in backend development and microservices architecture.</li>
+      </ul>
+      <p>---</p>
+      <div class="contact">
+        <h2>Get in touch</h2>
+        <p>If you have any questions or would like to engage in a conversation, I welcome you to reach out to me. Feel
+          free to send me a message directly, and I'll be happy to connect with you.</p>
+
+        <p>Feel free to visit my LinkedIn profile at <a href="https://www.linkedin.com/in/daviguides/">@daviguides</a>
+          to
+          connect and learn more about my professional journey.</p>
+
+        <p>You can also visit my GitHub profile at GitHub Profile: <a
+            href="https://github.com/daviguides">@daviguides</a>
+        </p>
+
+        <p>I look forward to hearing from you and discussing exciting opportunities or answering any queries you may
+          have.
+        </p>
+      </div>
+      <p>---</p>
+      <h2>More About Me</h2>
+      <p>I am a very curious and proactive professional with a great capacity to absorb new knowledge. I always seek
+        to think creatively, practically, and systematically to achieve the most relevant results for the business. I
+        always ask myself: What pain are we addressing here? How much value and differentiation will this add to the
+        company? If the answer is positive, I try to understand which part of the whole will bring the greatest impact.
+        Whether alone or in a group, it is a pleasure to accomplish and see things happen.</p>
+      <div class="photos">
+        <img src="./assets/images/cover.jpg" width="70%" />
+      </div>
+
+
+      <p>As a neurodivergent person with Giftedness, my hyperfocus and commitment are focused on continuous learning and
+        improvement, respecting both my uncommon abilities, such as divergent deep thinking, whole-detail perspective,
+        integration of opposing ideas and perspectives, among others, and the limitations of my condition, such as
+        hyperesthesia and hypersensitivities, among others.</p>
+
+      <p>I thrive in projects that offer constant growth opportunities and challenges, particularly those with a
+        data-driven, pragmatic, ethical, and pluralistic decision-making approach.</p>
+
+      <p>Pronouns: He/Him 🌈</p>
+
+      <p>Fun fact: I have a beautiful black cat who sometimes shows up to say hello in meetings or do some pair
+        programming with me.</p>
+
+      <div class="photos">
+        <img src="./assets/images/cat.jpeg" height="400px" />
+        <img class="secound_photo" src="./assets/images/cat2.jpeg" height="400px" />
+      </div>
+
+      <p>
+        Other curiosities: once every 15 days, my friend Ana comes over and we do a home co-working session.
+      </p>
+      <p>
+        Also, once a month, Ana and I have a Spa Saturday, dedicated to being a day of relaxation, with meditation,
+        QiGong
+        and yoga practices, reiki, and more. It's important for us to reduce stress levels and keep our minds fresh and
+        ready for action.
+      </p>
+
+      <div class="photos">
+        <img src="./assets/images/ana.jpeg" height="400px" />
+        <img class="secound_photo" src="./assets/images/ana2.jpeg" height="400px" />
+      </div>
+      <!-- </div> -->
+    </div>
+    <div class="background">
+      <div class="background-overlay"></div>
+    </div>
+
+    <script>
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        document.body.classList.add('mobile');
+      }
+      window.addEventListener("scroll", function () {
+        // var parallaxBg = document.querySelector(".parallax-bg");
+        // var scrolledHeight = window.pageYOffset;
+        // parallaxBg.style.backgroundPositionY = (-60 - (scrolledHeight * 0.10)) + "px";
+        var container = document.querySelector(".container");
+        container.style.marginTop = (-100 - (scrolledHeight * 0.30)) + "px";
+
+        // var container = document.querySelector(".title");
+        // container.style.marginTop = (-0 - (scrolledHeight * 0.14)) + "px";
+
+        // var body = document.getElementsByTagName('body')[0];
+
+        // var parallaxBg2 = document.querySelector(".background");
+        // var scrolledHeight = window.pageYOffset;
+
+        // parallaxBg2.style.backgroundPositionY = (
+        //   - ((scrolledHeight-(body.scrollHeight+200)) * 0.30)
+        //   ) + "px";
+      });
+    </script>
+</body>
+
+</html>
