@@ -1,0 +1,24 @@
+/* Estilos CSS para o breadcrumb */
+.breadcrumb {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .breadcrumb li {
+    margin-right: 10px;
+  }
+  
+  .breadcrumb li:last-child {
+    margin-right: 0;
+  }
+  
+  .breadcrumb li a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .breadcrumb li a:hover {
+    text-decoration: underline;
+  }
