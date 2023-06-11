@@ -95,7 +95,7 @@ body,
 
     .container {
       max-width: 70%;
-      margin: 100px auto;
+      margin: 0 auto;
       margin-bottom: 20px;
       padding: 1px 25px 20px 25px;
       position: relative;
@@ -104,6 +104,14 @@ body,
       border-radius: 3px;
       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
       backdrop-filter: blur(8px);
+    }
+
+    .negative-margin {
+      margin: -100px auto;
+    }
+
+    .positive-margin {
+      margin: 100px auto;
     }
 
     .background {
@@ -223,17 +231,33 @@ body,
       margin-top: 0px;
     }
 
-    .highlights ul {
+    .portifolio ul, .highlights ul {
       font-size: 110%;
       list-style-type: disc;
       margin: 15px 40px 20px;
     }
 
-    .highlights li {
+    .portifolio li, .highlights li {
       font-size: 100%;
       color: #555;
       margin-bottom: 5px;
     }
+
+    a {
+      color: #555;
+    }
+
+    .container a {
+      font-weight: 500;
+      text-decoration: none;
+      color: #485460;
+    }
+    
+    .container a:hover {
+      text-decoration: underline;
+      color: #34495e;
+    }
+    
 
     .contact {
       margin-top: 30px;
