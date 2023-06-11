@@ -264,6 +264,11 @@ body,
       margin-bottom: 5px;
     }
 
+    .portifolio li {
+      font-size: 105%;
+      margin-bottom: 8px;
+    }
+
     a {
       color: #555;
     }
