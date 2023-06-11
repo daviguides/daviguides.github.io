@@ -184,7 +184,7 @@ body,
     h3 {
       font-weight: 400;
       font-size: 120%;
-      margin-bottom: 5px;
+      margin-bottom: 1px;
     }
 
     strong {
@@ -196,7 +196,7 @@ body,
       font-size: 120%;
       text-align: justify;
       color: #555;
-      margin: 20px 30px 10px 20px;
+      margin: 10px 30px 10px 20px;
     }
 
     p.sumary {
